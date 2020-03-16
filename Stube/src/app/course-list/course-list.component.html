@@ -1,0 +1,26 @@
+<div class="container">
+    <h2><b><i>{{ title }}</i></b></h2>
+
+    <div *ngFor="let courses of course_list">
+
+        <div class="row no-gutters bg-light position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <img width=100px height=200px [src]="courses.image" class="w-100" [alt]="courses.course">
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0">
+              <h5 class="mt-0"><b>{{ courses.course }}</b></h5>
+              <p>
+                Language of Course       : {{ courses.language }} <br>
+                Speaker of Course        : {{ courses.speaker }} <br>
+                Total lectures of Course : {{ courses.t_lectures }} <br>
+                Course for               : {{ courses.level }} <br>
+              </p>
+              <a routerLink="/course-list/{{ courses.link }}" routerLinkActive="active" class="stretched-link">Explore it</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
