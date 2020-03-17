@@ -72,6 +72,26 @@ export class CourseListComponent implements OnInit {
       link       : "Web Development -by Sourabh Shukla",
 
     },
+    {
+      course     : "Machine Learning Course",
+      language   : "Hindi",
+      speaker    : "Sourabh Shukla",
+      t_lectures : "41",
+      image      : "assets/images/ML.png",
+      level      : "Beginner",
+      link       : "Machine Learning -by Sourabh Shukla",
+
+    },
+    {
+      course     : "Java Basics",
+      language   : "Hindi",
+      speaker    : "Sourabh Shukla",
+      t_lectures : "41",
+      image      : "assets/images/java.jpeg",
+      level      : "Beginner",
+      link       : "Java -by Sourabh Shukla",
+
+    },
   ];
 
   constructor(private route:ActivatedRoute) 
