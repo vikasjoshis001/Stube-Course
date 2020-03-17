@@ -1,14 +1,18 @@
 <div class="container">
 
+    <h3 style="text-align:center;">{{ link }}</h3>
+
 <!-- For Angular 9.0 -->
 <div class="row no-gutters bg-light position-relative">
     <div class="col-md-6 mb-md-0 p-md-4">
+        <div class="row">
         <div *ngFor="let video of Angular;let i =index" >
             <div *ngIf="link == 'Angular 9.0 -by Justin Mitchel'" >
                 <h5 class="mt-0">Angular Tutorial - {{ i+1 }}.   </h5>
                 <iframe width="300" height="200"  [src]="getangular(video)"  frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <hr>
             </div>
+        </div>
         </div> 
     </div>
 </div>
