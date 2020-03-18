@@ -2,6 +2,8 @@ import { Component, OnInit,OnDestroy} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { getUrlScheme } from '@angular/compiler';
 import { DomSanitizer } from '@angular/platform-browser';
+// -- import { HttpClientModule } from '@angular/common/http';
+
 
 @Component
 ({
@@ -88,12 +90,14 @@ export class CourseDetailComponent implements OnInit,OnDestroy
   // Normal dict
 
 
-  constructor( private sanitizer:DomSanitizer , private route:ActivatedRoute) 
+  constructor(private sanitizer:DomSanitizer , private route:ActivatedRoute) 
   { }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
     this.routeSub = this.route.params.subscribe(params=>{
          this.link = params['link']   
+
       })
   }
 

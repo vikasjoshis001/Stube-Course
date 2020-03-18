@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+// import { HttpClient } from '@angular/common/http';
+// import * as course from './assets/json/courses.json';
+
+
 
 @Component
 ({
@@ -7,9 +11,11 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './course-list.component.html',
   styleUrls: ['./course-list.component.css']
 })
-export class CourseListComponent implements OnInit {
-
+export class CourseListComponent implements OnInit,OnDestroy {
+  
+  private req:any;
   title = "Course List"
+  // course_list:[any];
   course_list =
   [
     {
@@ -99,10 +105,23 @@ export class CourseListComponent implements OnInit {
 
   ngOnInit()
   {
+    // console.log(course)
       this.route.params.subscribe(params => {
         console.log(params)
+
       })
 
+      // this.req = this.http.get("assets/json/courses.json").subscribe.map(data=>{
+      // console.log(data.json())
+      // this.course_list = data.json() as [any];
+
+      // })
+
+  }
+
+  ngOnDestroy()
+  {
+      this.req.unsubscribe()
   }
 
 
