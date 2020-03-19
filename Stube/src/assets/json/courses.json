@@ -1,6 +1,6 @@
   [
     {
-      "course"     : "Angular ",
+      "course"     : "Angular 9.0",
       "language"   : "English",
       "speaker"    : "Justin Mitchel",
       "t_lectures" : "28",
@@ -78,5 +78,5 @@
       "level"      : "Beginner",
       "link"       : "Java -by Sourabh Shukla"
 
-    },
+    }
   ]
