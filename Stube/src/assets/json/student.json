@@ -1,0 +1,42 @@
+[
+    {
+        "course"     : "Django 2.0",
+        "language"   : "English",
+        "speaker"    : "Justin Mitchel",
+        "t_lectures" : "48",
+        "image"      : "assets/images/django.jpg",
+        "level"      : "Beginner",
+        "link"       : "Django 2.0 -by Justin Mitchel"
+  
+      },
+      {
+        "course"     : "Django 2.2",
+        "language"   : "English",
+        "speaker"    : "Justin Mitchel",
+        "t_lectures" : "48",
+        "image"      : "assets/images/django 2.2.jpeg",
+        "level"      : "Intermediate",
+        "link"       : "Django 2.2 -by Justin Mitchel"
+  
+      },
+      {
+        "course"     : "Machine Learning Course",
+        "language"   : "Hindi",
+        "speaker"    : "Sourabh Shukla",
+        "t_lectures" : "41",
+        "image"      : "assets/images/ML.png",
+        "level"      : "Beginner",
+        "link"       : "Machine Learning -by Sourabh Shukla"
+  
+      },
+      {
+        "course"     : "Java Basics",
+        "language"   : "Hindi",
+        "speaker"    : "Sourabh Shukla",
+        "t_lectures" : "41",
+        "image"      : "assets/images/java.jpeg",
+        "level"      : "Beginner",
+        "link"       : "Java -by Sourabh Shukla"
+  
+      }
+]

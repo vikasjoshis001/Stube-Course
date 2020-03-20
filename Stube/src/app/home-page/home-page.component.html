@@ -1,22 +1,24 @@
 <!-- Home page image gallery -->
+
 <div class="container" >
- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img height="300px" src="assets/images/Angularjs.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img height="300px" src="assets/images/C pro.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img height="300px" src="assets/images/django python.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img height="300px" src="assets/images/web dev.jpeg" class="d-block w-100" alt="...">
-    </div>
+
+  <carousel>
+    <slide>
+      <img height="300px" class="d-block w-100" src="assets/images/Angularjs.jpeg" alt="first slide" style="display: block;">
+    </slide>
+    <slide>
+      <img height="300px" class="d-block w-100" src="assets/images/C pro.png" alt="second slide" style="display: block;">
+    </slide>
+    <slide>
+      <img height="300px" class="d-block w-100" src="assets/images/django python.jpg" alt="third slide" style="display: block;">
+    </slide>
+    <slide>
+      <img height="300px" class="d-block w-100" src="assets/images/web dev.jpeg" alt="third slide" style="display: block;">
+    </slide>
+  </carousel>
+  
   </div>
- </div>
-</div>
+  
 
 <!-- Home page image gallery -->
 <!-- Recommendation block -->
@@ -27,9 +29,10 @@
 
 
 <div class="container">
-    <h3>{{ title }}</h3>
+    <h3>All New Courses</h3>
+    <hr>
         <div class='row'>
-            <div  style="width: 18rem;" *ngFor='let video of recommended_course'>
+            <div  style="width: 17rem;" *ngFor='let video of recommended_course'>
                 <div class="col-sm-12">
                     <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}" routerLinkActive="active" width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
                 <div class="card-body">
@@ -45,6 +48,27 @@
 
 
 <!-- Recommendation block -->
+<!-- Mostly students View -->
+
+<div class="container">
+  <hr>
+  <h3>Mostly Students View</h3>
+  <hr>
+      <div class='row'>
+          <div  style="width: 17rem;" *ngFor='let video of student_course'>
+              <div class="col-sm-12">
+                  <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}" routerLinkActive="active" width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
+              <div class="card-body">
+                  <h5 class="card-title">{{ video.course }}</h5>
+                  <p style="color:grey;" class="card-text">{{ video.speaker }} <br></p>
+                  <p><b>Free</b></p>
+              </div>
+              </div>
+          </div>
+      </div>
+</div>
+
+<!-- Mostly students View -->
 
 
 

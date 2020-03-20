@@ -1,5 +1,7 @@
 import { Component, OnInit,OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import lectures from 'src/assets/json/recommendation.json';
+import tutorials from 'src/assets/json/student.json';
 
 @Component({
   selector: 'app-home-page',
@@ -9,41 +11,26 @@ import { ActivatedRoute } from '@angular/router';
 export class HomePageComponent implements OnInit,OnDestroy{
   private routeSub:any;
   link = 'string';
-  title = "Mostly Viewed courses"
-  recommended_course = 
-  [
-    {
-      course     : "Angular 9.0",
-      language   : "English",
-      speaker    : "Justin Mitchel",
-      t_lectures : "28",
-      image      : "assets/images/Angular.png",
-      level      : "Beginner",
-      link       : "Angular 9.0 -by Justin Mitchel",
-
-    },
-    {
-      course     : "Machine Learning Course",
-      language   : "Hindi",
-      speaker    : "Sourabh Shukla",
-      t_lectures : "41",
-      image      : "assets/images/ML.png",
-      level      : "Beginner",
-      link       : "Machine Learning -by Sourabh Shukla",
-
-    },
-    {
-      course     : "Java Basics",
-      language   : "Hindi",
-      speaker    : "Sourabh Shukla",
-      t_lectures : "41",
-      image      : "assets/images/java.jpeg",
-      level      : "Beginner",
-      link       : "Java -by Sourabh Shukla",
-
-    },
-  ]
-
+  public recommended_course:{
+    course:'string',
+    language:'string',
+    speaker:'string',
+    t_lectures:'string',
+    image:'string',
+    level:'string',
+    link:'string',
+  } []=lectures;
+  
+  public student_course:{
+    course:'string',
+    language:'string',
+    speaker:'string',
+    t_lectures:'string',
+    image:'string',
+    level:'string',
+    link:'string',
+  } []=tutorials;
+  
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
