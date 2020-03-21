@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "Stube",
+      "public": "dist/Stube",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

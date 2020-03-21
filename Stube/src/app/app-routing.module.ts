@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 const routes: Routes = 
@@ -18,6 +19,10 @@ const routes: Routes =
   {
     path : "home",
     component : HomePageComponent
+  },
+  {
+    path : "nav",
+    component : NavbarComponent
   },
   
 ];

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "stube-2afc8": {
+      "hosting": {
+        "Stube": [
+          "stube-2afc8"
+        ]
+      }
+    }
+  }
+}
