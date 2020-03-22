@@ -1,9 +1,9 @@
 {
   "targets": {
-    "stube-2afc8": {
+    "stubecourse": {
       "hosting": {
         "Stube": [
-          "stube-2afc8"
+          "stubecourse"
         ]
       }
     }

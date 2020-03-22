@@ -1,30 +1,19 @@
 <!-- <div class = "container"> -->
 <mat-sidenav-container style="background-color:black;" class="sidenav-container">
-  <!-- <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar style="background-color:blue;" >Menu</mat-toolbar>
-    <mat-nav-list style="background-color:white;">
-      <a mat-list-item href="/home">Home</a>
-      <a mat-list-item href="#">Courses</a>
-      <a mat-list-item href="#">List</a>
-    </mat-nav-list>
-  </mat-sidenav> -->
+  
   <mat-sidenav-content>
     <mat-toolbar style="background-color:black">
-      <!-- <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button> -->
+  
       <span class="spacer"> </span>
       <a  id="demo" mat-list-item href="/home"><b>Home</b></a>
       <a  id="demo" mat-list-item href="/course-list"><b>Courses</b></a>
       <a  id="demo" mat-list-item href="#"><b>More</b></a>
+      <!-- Search form -->
+      <form class="form-inline md-form form-sm">
+        <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon>
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"mdbInput>
+        <!-- <button mdbBtn size="sm" gradient="aqua" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button> -->
+      </form>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>
