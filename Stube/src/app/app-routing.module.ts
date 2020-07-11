@@ -4,6 +4,7 @@ import { CourseListComponent } from './course-list/course-list.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = 
@@ -17,12 +18,20 @@ const routes: Routes =
     component : CourseDetailComponent
   },
   {
+    path : "",
+    component : HomePageComponent
+  },
+  {
     path : "home",
     component : HomePageComponent
   },
   {
     path : "nav",
     component : NavbarComponent
+  },
+  {
+    path : "about",
+    component : AboutComponent
   },
   
 ];

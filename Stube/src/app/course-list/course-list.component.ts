@@ -1,6 +1,5 @@
 import { Component, OnInit,OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-// import { HttpClient } from '@angular/common/http';
 import videos from 'src/assets/json/courses.json';
 
 
@@ -12,6 +11,7 @@ import videos from 'src/assets/json/courses.json';
 })
 export class CourseListComponent implements OnInit,OnDestroy {
   
+  private filter:any[];
   private req:any;
   title = "Course List"
   public course_list:{
@@ -34,12 +34,6 @@ export class CourseListComponent implements OnInit,OnDestroy {
         console.log(params)
 
       })
-
-      // this.req = this.http.get("src/assets/json/courses.json").subscribe.map(data=>{
-      // console.log(data.json())
-      // this.course_list = data.json() as [any];
-
-      // })
 
   }
 

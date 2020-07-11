@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-bootstrap';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,15 @@ import { MatListModule } from '@angular/material/list';
     CourseDetailComponent,
     HomePageComponent,
     NavbarComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    Ng2SearchPipeModule,
+    FormsModule,
     CarouselModule.forRoot(),
     LayoutModule,
     MatToolbarModule,

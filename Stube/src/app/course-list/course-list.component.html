@@ -1,7 +1,9 @@
 <div class="container">
     <h2><b><i>{{ title }}</i></b></h2>
-    <div *ngFor="let courses of course_list">
-
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control"  placeholder="Enter Keyword for filter result" [(ngModel)]="term" >
+    </div>
+    <div *ngFor="let courses of course_list | filter:term">
         <div class="row no-gutters bg-light position-relative">
             <div class="col-md-6 mb-md-0 p-md-4">
                 <img style="border:solid;padding:20px;" width=100px height=200px [src]="courses.image" class="w-100" [alt]="courses.course">
@@ -19,7 +21,6 @@
         </div>
 
     </div>
-
 </div>
 
 <router-outlet></router-outlet>
