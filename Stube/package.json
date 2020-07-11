@@ -23,7 +23,7 @@
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.3.1",
     "firebase": ">= 5.5.7 <8",
     "jquery": "^3.5.1",
     "ng2-search-filter": "^0.5.1",
