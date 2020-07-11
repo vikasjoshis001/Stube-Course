@@ -10,9 +10,14 @@ import videos from 'src/assets/json/courses.json';
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit,OnDestroy {
+
   
-  private filter:any[];
+
+    
+
+
   private req:any;
+  text:string;
   title = "Course List"
   public course_list:{
     course:'string',
@@ -36,6 +41,8 @@ export class CourseListComponent implements OnInit,OnDestroy {
       })
 
   }
+
+  log(val) { console.log(val); }
 
   ngOnDestroy()
   {
