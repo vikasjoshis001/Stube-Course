@@ -1,0 +1,24 @@
+#rec_course
+{
+    width: 17rem;
+}
+
+#carousel
+{
+    height:300px;
+}
+
+
+
+@media only screen and (max-width: 600px) 
+{
+    #rec_course
+    {
+      width:100%;
+    }
+    #carousel
+    {
+        height:200px;
+    }
+}
+  

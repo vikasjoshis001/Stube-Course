@@ -1,52 +1,42 @@
-import { Component, OnInit,OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import videos from 'src/assets/json/courses.json';
 
 
 @Component
-({
-  selector: 'app-course-list',
-  templateUrl: './course-list.component.html',
-  styleUrls: ['./course-list.component.css']
-})
-export class CourseListComponent implements OnInit,OnDestroy {
-
-  
-
-    
+  ({
+    selector: 'app-course-list',
+    templateUrl: './course-list.component.html',
+    styleUrls: ['./course-list.component.css']
+  })
+export class CourseListComponent implements OnInit, OnDestroy {
 
 
-  private req:any;
-  text:string;
+
+
+
+
+  private req: any;
+  text: string;
   title = "Course List"
-  public course_list:{
-    course:'string',
-    language:'string',
-    speaker:'string',
-    t_lectures:'string',
-    image:'string',
-    level:'string',
-    link:'string',
-  } []=videos;
-  
-  constructor(private route:ActivatedRoute) 
-  { }
+  public course_list: {
+    course: 'string',
+    language: 'string',
+    speaker: 'string',
+    t_lectures: 'string',
+    image: 'string',
+    level: 'string',
+    link: 'string',
+  }[] = videos;
 
-  ngOnInit()
-  {
-    // console.log(course)
-      this.route.params.subscribe(params => {
-        console.log(params)
+  constructor(private route: ActivatedRoute) { }
 
-      })
+  ngOnInit() {
 
   }
 
-  log(val) { console.log(val); }
 
-  ngOnDestroy()
-  {
-      this.req.unsubscribe()
+  ngOnDestroy() {
   }
 
 
