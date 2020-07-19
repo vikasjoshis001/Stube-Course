@@ -5,6 +5,8 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { VideoformComponent } from './videoform/videoform.component';
+import { DeleteformComponent } from './deleteform/deleteform.component';
 
 
 const routes: Routes = 
@@ -32,6 +34,14 @@ const routes: Routes =
   {
     path : "about",
     component : AboutComponent
+  },
+  {
+    path : "form",
+    component : VideoformComponent
+  },
+  {
+    path : "delete",
+    component : DeleteformComponent
   },
   
 ];

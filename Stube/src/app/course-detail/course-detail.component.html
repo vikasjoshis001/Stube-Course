@@ -1,12 +1,18 @@
 <div class="container">
     <h3 style="text-align:center;">{{ link }}</h3>
 
+    <!-- For Angular 9.0 -->
     <div class='row'>
+        <div *ngIf="link == 'Angular 9.0 -by Justin Mitchel'">
+            <div class="container">
+                <div style="color:black" *ngIf="Angular.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
         <div style="width: 17rem;" *ngFor="let video of Angular;let i =index">
             <div *ngIf="link == 'Angular 9.0 -by Justin Mitchel'">
                 <div class="col-sm-12">
                     <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
-                        [src]="getangular(video)" frameborder="20"
+                        [src]="getcourse(video)" frameborder="20"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h5 class="mt-0">Angular Tutorial - {{ i+1 }}.</h5>
@@ -21,11 +27,17 @@
 
     <!-- For C Programming -->
     <div class='row'>
+        <div *ngIf="link == 'C programming Basics -by Sourabh Shukla'">
+            <div class="container">
+                <div style="color:black" *ngIf="C.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
         <div style="width: 17rem;" *ngFor="let video of C;let i =index">
             <div *ngIf="link == 'C programming Basics -by Sourabh Shukla'">
+                <div style="color:black" *ngIf="C.length==0"><b>Videos will uploded soon...</b></div>
                 <div class="col-sm-12">
                     <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
-                        [src]="getC(video)" frameborder="20"
+                        [src]="getcourse(video)" frameborder="20"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <h5 class="mt-0">C language Tutorial- {{ i+1 }}.</h5>
@@ -37,15 +49,143 @@
     <!-- For C Programming -->
 
 
-    <!-- For other courses -->
-
-    <div *ngIf="(link != 'Angular 9.0 -by Justin Mitchel') && (link != 'C programming Basics -by Sourabh Shukla')">
-        <p style="color:black;"><b>The Videos will uploaded soon...</b></p>
+    <!-- For Django 2.0 -->
+    <div class='row'>
+        <div *ngIf="link == 'Django 2.0 -by Justin Mitchel'">
+            <div class="container">
+                <div style="color:black" *ngIf="Django2.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of Django2;let i =index">
+            <div *ngIf="link == 'Django 2.0 -by Justin Mitchel'">
+                <div style="color:black" *ngIf="Django2.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Django 2.0 Tutorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- For Django 2.0 -->
 
-    <!-- For other courses -->
+    <!-- For Django 2.2 -->
+    <div class='row'>
+        <div *ngIf="link == 'Django 2.2 -by Justin Mitchel'">
+            <div class="container">
+                <div style="color:black" *ngIf="Django22.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of Django22;let i =index">
+            <div *ngIf="link == 'Django 2.2 -by Justin Mitchel'">
+                <div style="color:black" *ngIf="Django22.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Django 2.2 Tutorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Django 2.2 -->
 
+    <!-- For Typescript -->
+    <div class='row'>
+        <div *ngIf="link == 'Typescript -by Justin Mitchel'">
+            <div class="container">
+                <div style="color:black" *ngIf="Typescript.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of Typescript;let i =index">
+            <div *ngIf="link == 'Typescript -by Justin Mitchel'">
+                <div style="color:black" *ngIf="Typescript.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Typescript Tutorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Typescript -->
 
+    <!-- For Web -->
+    <div class='row'>
+        <div *ngIf="link == 'Web Development -by Sourabh Shukla'">
+            <div class="container">
+                <div style="color:black" *ngIf="Web.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of Web;let i =index">
+            <div *ngIf="link == 'Web Development -by Sourabh Shukla'">
+                <div style="color:black" *ngIf="Web.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Web Development Tutorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Web -->
+
+    <!-- For ML -->
+    <div class='row'>
+        <div *ngIf="link == 'Machine Learning -by Sourabh Shukla'">
+            <div class="container">
+                <div style="color:black" *ngIf="ML.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of ML;let i =index">
+            <div *ngIf="link == 'Machine Learning -by Sourabh Shukla'">
+                <div style="color:black" *ngIf="ML.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Machine Learning utorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For ML -->
+
+    <!-- For Java -->
+    <div class='row'>
+        <div *ngIf="link == 'Java -by Sourabh Shukla'">
+            <div class="container">
+                <div style="color:black" *ngIf="Java.length==0"><b>Videos will uploded soon...</b></div>
+            </div>
+        </div>
+        <div style="width: 17rem;" *ngFor="let video of Java;let i =index">
+            <div *ngIf="link == 'Java -by Sourabh Shukla'">
+                <div style="color:black" *ngIf="Java.length==0"><b>Videos will uploded soon...</b></div>
+                <div class="col-sm-12">
+                    <iframe style="border:solid;padding:20px;border-color:white;" width="300" height="200"
+                        [src]="getcourse(video)" frameborder="20"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h5 class="mt-0">Java Tutorial - {{ i+1 }}.</h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Java -->
 </div>
 
 <router-outlet></router-outlet>

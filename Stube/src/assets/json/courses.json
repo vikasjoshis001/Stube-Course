@@ -1,5 +1,6 @@
   [
     {
+      "title" : "Angular",
       "course": "Angular 9.0",
       "language": "English",
       "speaker": "Justin Mitchel",
@@ -9,6 +10,7 @@
       "link": "Angular 9.0 -by Justin Mitchel"
     },
     {
+      "title" : "C",
       "course": "C programming Basics",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
@@ -18,6 +20,7 @@
       "link": "C programming Basics -by Sourabh Shukla"
     },
     {
+      "title" : "Django2",
       "course": "Django 2.0",
       "language": "English",
       "speaker": "Justin Mitchel",
@@ -27,6 +30,7 @@
       "link": "Django 2.0 -by Justin Mitchel"
     },
     {
+      "title" : "Django22",
       "course": "Django 2.2",
       "language": "English",
       "speaker": "Justin Mitchel",
@@ -36,6 +40,7 @@
       "link": "Django 2.2 -by Justin Mitchel"
     },
     {
+      "title" : "Typescript",
       "course": "Typescript",
       "language": "English",
       "speaker": "Justin Mitchel",
@@ -45,6 +50,7 @@
       "link": "Typescript -by Justin Mitchel"
     },
     {
+      "title" : "Web",
       "course": "Web Development - HTML,CSS,Javascript,Jquery,PHP,Mysql",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
@@ -54,6 +60,7 @@
       "link": "Web Development -by Sourabh Shukla"
     },
     {
+      "title" : "ML",
       "course": "Machine Learning Course",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
@@ -63,6 +70,7 @@
       "link": "Machine Learning -by Sourabh Shukla"
     },
     {
+      "title" : "Java",
       "course": "Java Basics",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",

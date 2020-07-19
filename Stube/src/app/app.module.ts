@@ -4,8 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'ngx-bootstrap';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
-
-
+import { FormService } from './form.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +20,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AboutComponent } from './about/about.component';
+import { VideoformComponent } from './videoform/videoform.component';
+import { DeleteformComponent } from './deleteform/deleteform.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,8 @@ import { AboutComponent } from './about/about.component';
     HomePageComponent,
     NavbarComponent,
     AboutComponent,
+    VideoformComponent,
+    DeleteformComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,7 @@ import { AboutComponent } from './about/about.component';
     MatIconModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [FormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
