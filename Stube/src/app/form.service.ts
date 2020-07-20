@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class FormService {
 
   constructor(private http: HttpClient) { }
-  url = 'http://127.0.0.1:8000/video/'
+  url = 'https://stube-store.herokuapp.com/video/'
 
   getapi() {
     return this.http.get(this.url)

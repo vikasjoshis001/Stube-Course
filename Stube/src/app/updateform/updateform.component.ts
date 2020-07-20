@@ -62,7 +62,7 @@ export class UpdateformComponent implements OnInit {
   }
 
   onSubmit(data) {
-    var urls = 'http://127.0.0.1:8000/' + this.id + '/'
+    var urls = 'https://stube-store.herokuapp.com/' + this.id + '/'
     this.http.put(urls, data.value).subscribe(result => {
     });
     this.showupdate = true;

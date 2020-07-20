@@ -47,7 +47,7 @@ export class DeleteformComponent implements OnInit {
           if (this.Data['number'] == course_count) {
             this.id = i
             console.log(this.id)
-            var urls = 'http://127.0.0.1:8000/'
+            var urls = 'https://stube-store.herokuapp.com/'
             this.http.delete(urls + this.id).subscribe(result => {
             });
             this.show = true;
