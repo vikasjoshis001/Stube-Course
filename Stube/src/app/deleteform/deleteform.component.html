@@ -30,7 +30,7 @@
           <label class="input-group-text" for="inputGroupSelect01">Courses</label>
         </div>
         <select name="course" ngModel class="custom-select" id="inputGroupSelect01">
-          <option selected>Choose...</option>
+          <!-- <option selected>Choose...</option> -->
           <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
         </select>
       </div>

@@ -14,17 +14,18 @@
         <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <strong>Success!</strong> This Video is Sucessfully Added
       </div>
-      <label for="videoembed">Video Code</label>
+      <label for="videoembed">Video Code <i class="fa fa-info-circle icon" style="color:blue"></i></label>
       <input required minlength="11" maxlength="11" type="text" class="form-control" #code="ngModel" name="code" ngModel
         aria-describedby="videoembed" placeholder="Enter code">
       <span *ngIf="code.invalid && code.touched" style="color:red;"><b>**Please Fill Correct Code</b></span>
       <br>
+      <label for="deletevideo">Select Course</label>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text" for="inputGroupSelect01">Courses</label>
         </div>
         <select required name="course" ngModel class="custom-select" id="inputGroupSelect01">
-          <option selected>Choose...</option>
+          <!-- <option selected>Choose...</option> -->
           <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
         </select>
       </div>
@@ -50,7 +51,7 @@
 
 
 
-
+<!-- QXeEoD0pB3E -->
 
 
 <router-outlet></router-outlet>

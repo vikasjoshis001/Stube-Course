@@ -5,3 +5,13 @@ input.ng-valid{
 input.ng-invalid{
     border-left:5px solid red;
 }
+
+.icon:hover:after {
+    content: "Embed a video On a computer, go to the YouTube video you want to embed.Under the video, click SHARE Share.Click Embed.From the box that appears, copy the HTML code.Paste the code into your blog or website HTML.";
+    display: block;
+    position: relative;
+    color:grey;
+    top: -16px; 
+    right: -16px;
+    width: 50%;
+}
