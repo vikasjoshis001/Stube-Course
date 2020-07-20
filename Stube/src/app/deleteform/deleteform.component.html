@@ -1,1 +1,62 @@
-<p>deleteform works!</p>
+<html>
+
+<head>
+  <title>Stube | Delete Videos</title>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <h2><b><i>{{ title|titlecase }}</i></b></h2>
+    <br>
+    <form #deleteform="ngForm" (ngSubmit)="onSubmit(deleteform)">
+      <div *ngIf="show" class="alert alert-success alert-dismissible">
+        <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong> This Video is Sucessfully Deleted
+      </div>
+      <div *ngIf="error" class="alert alert-danger">
+        <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Oops!</strong> Either You Entered a Wrong Tutorial Number or Selected a Wrong Course
+      </div>
+      <label for="deletevideo">Tutorial Number</label>
+      <input required minlength="1" maxlength="3" type="text" class="form-control" #number="ngModel" name="number"
+        ngModel aria-describedby="deletevideo" placeholder="Enter Tutorial Number">
+      <span *ngIf="number.invalid && number.touched" style="color:red;"><b>**Please Fill Correct Tutorial
+          Number</b></span>
+      <br>
+      <label for="deletevideo">Select Course</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Courses</label>
+        </div>
+        <select name="course" ngModel class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
+        </select>
+      </div>
+      <button type="submit" [disabled]="deleteform.invalid" class="btn btn-primary">Delete</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

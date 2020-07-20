@@ -1,5 +1,6 @@
 <div class="container">
-  <h2><b><i>{{ title }}</i></b></h2>
+  <br>
+  <h2><b><i>{{ title|titlecase }}</i></b></h2>
   <div class="form-group">
     <input type="text" class="form-control" [(ngModel)]="text" placeholder="Search Here">
   </div>
@@ -10,12 +11,13 @@
           [alt]="courses.course">
       </div>
       <div class="col-md-6 position-static p-4 pl-md-0">
-        <h5 class="mt-0"><b>{{ courses.course }}</b></h5>
+        <h5 class="mt-0"><b>{{ courses.course|titlecase  }}</b></h5>
         <p>
-          Language of Course : {{ courses.language }} <br>
-          Speaker of Course : {{ courses.speaker }} <br>
-          Total lectures of Course : {{ courses.t_lectures }} <br>
-          Course for : {{ courses.level }} <br>
+          Language of Course : {{ courses.language|titlecase }} <br>
+          Speaker of Course : {{ courses.speaker|titlecase  }} <br>
+          Total lectures of Course : {{ courses.t_lectures|titlecase  }} <br>
+          Course for : {{ courses.level|titlecase  }} <br>
+          YouTube channel : {{ courses.channel }} <br>
         </p>
         <a href="/course-list/{{ courses.link }}" class="stretched-link">Explore it</a>
       </div>

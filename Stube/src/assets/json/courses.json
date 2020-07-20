@@ -1,82 +1,134 @@
   [
     {
-      "title" : "Angular",
-      "course": "Angular 9.0",
+      "title": "Angular4",
+      "course": "Angular 4.0",
       "language": "English",
       "speaker": "Justin Mitchel",
       "t_lectures": "28",
       "image": "assets/images/Angular.png",
       "level": "Beginner",
-      "link": "Angular 9.0 -by Justin Mitchel"
+      "link": "Angular 4.0 -by Justin Mitchel",
+      "channel": "CodingEntrepreneurs"
     },
     {
-      "title" : "C",
+      "title": "NodeJS",
+      "course": "NodeJS Tutorial for Beginners",
+      "language": "English",
+      "speaker": "The Net Ninja",
+      "t_lectures": "37",
+      "image": "assets/images/node.jpeg",
+      "level": "Beginner",
+      "link": "NodeJS -by Net Ninja",
+      "channel": "The Net Ninja"
+    },
+    {
+      "title": "C",
       "course": "C programming Basics",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
       "t_lectures": "41",
-      "image": "assets/images/C .png",
+      "image": "assets/images/C.png",
       "level": "Beginner",
-      "link": "C programming Basics -by Sourabh Shukla"
+      "link": "C programming Basics -by Sourabh Shukla",
+      "channel": "MySirG.com"
     },
     {
-      "title" : "Django2",
+      "title": "Django2",
       "course": "Django 2.0",
       "language": "English",
       "speaker": "Justin Mitchel",
       "t_lectures": "48",
       "image": "assets/images/django.jpg",
       "level": "Beginner",
-      "link": "Django 2.0 -by Justin Mitchel"
+      "link": "Django 2.0 -by Justin Mitchel",
+      "channel": "CodingEntrepreneurs"
     },
     {
-      "title" : "Django22",
+      "title": "Django22",
       "course": "Django 2.2",
       "language": "English",
       "speaker": "Justin Mitchel",
       "t_lectures": "48",
       "image": "assets/images/django 2.2.jpeg",
       "level": "Intermediate",
-      "link": "Django 2.2 -by Justin Mitchel"
+      "link": "Django 2.2 -by Justin Mitchel",
+      "channel": "CodingEntrepreneurs"
     },
     {
-      "title" : "Typescript",
+      "title": "Typescript",
       "course": "Typescript",
       "language": "English",
       "speaker": "Justin Mitchel",
       "t_lectures": "11",
       "image": "assets/images/typescript.png",
       "level": "Beginner",
-      "link": "Typescript -by Justin Mitchel"
+      "link": "Typescript -by Justin Mitchel",
+      "channel": "CodingEntrepreneurs"
     },
     {
-      "title" : "Web",
+      "title": "Web",
       "course": "Web Development - HTML,CSS,Javascript,Jquery,PHP,Mysql",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
       "t_lectures": "41",
       "image": "assets/images/web.jpg",
       "level": "Beginner",
-      "link": "Web Development -by Sourabh Shukla"
+      "link": "Web Development -by Sourabh Shukla",
+      "channel": "MySirG.com"
     },
     {
-      "title" : "ML",
+      "title": "ML",
       "course": "Machine Learning Course",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
       "t_lectures": "41",
       "image": "assets/images/ML.png",
       "level": "Beginner",
-      "link": "Machine Learning -by Sourabh Shukla"
+      "link": "Machine Learning -by Sourabh Shukla",
+      "channel": "MySirG.com"
     },
     {
-      "title" : "Java",
+      "title": "Java",
       "course": "Java Basics",
       "language": "Hindi",
       "speaker": "Sourabh Shukla",
       "t_lectures": "41",
       "image": "assets/images/java.jpeg",
       "level": "Beginner",
-      "link": "Java -by Sourabh Shukla"
+      "link": "Java -by Sourabh Shukla",
+      "channel": "MySirG.com"
+    },
+    {
+      "title": "Angular9",
+      "course": "Angular 9 hindi tutorial",
+      "language": "Hindi",
+      "speaker": "Anil sidhu",
+      "t_lectures": "54",
+      "image": "assets/images/angular9.jpeg",
+      "level": "Beginner",
+      "link": "Angular 9 -by Anil Sidhu",
+      "channel": "php step by step"
+    },
+    {
+      "title": "ReactJS",
+      "course": "ReactJS Tutorial for Beginners",
+      "language": "English",
+      "speaker": "CodeEvolution",
+      "t_lectures": "76",
+      "image": "assets/images/react.png",
+      "level": "Beginner",
+      "link": "ReactJS -by CodeEvolution",
+      "channel": "CodeEvolution"
+    },
+    {
+      "title": "Python",
+      "course": "Python Tutorial for Beginners",
+      "language": "Hindi",
+      "speaker": "Telusko",
+      "t_lectures": "85",
+      "image": "assets/images/telusko.jpeg",
+      "level": "Beginner",
+      "link": "Python -by Telusko",
+      "channel": "Telusko"
     }
   ]

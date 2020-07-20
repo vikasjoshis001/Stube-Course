@@ -14,10 +14,12 @@ export class VideoformComponent implements OnInit {
 
   private routeSub: any;
   private req: any;
+  title = "add video"
   show = false;
   code: string;
   courses: string;
   public course_list: {
+    title: 'string',
     course: 'string',
     language: 'string',
     speaker: 'string',

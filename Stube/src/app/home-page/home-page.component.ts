@@ -34,13 +34,8 @@ export class HomePageComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.routeSub = this.route.params.subscribe(params=>{
-    //   this.link=params['link']
-    // })
   }
 
-  ngOnDestroy(): void {
-    // this.routeSub.unsubscribe()
-  }
+  ngOnDestroy(): void {  }
 
 }

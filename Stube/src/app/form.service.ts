@@ -6,15 +6,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FormService {
 
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) { }
   url = 'http://127.0.0.1:8000/video/'
 
-  getapi(){
-   return this.http.get(this.url)
+  getapi() {
+    return this.http.get(this.url)
   }
 
-  postapi(data){
-    return this.http.post(this.url,data)
+  postapi(data) {
+    return this.http.post(this.url, data)
   }
-
 }

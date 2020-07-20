@@ -1,19 +1,31 @@
-<!-- <div class = "container"> -->
-<mat-sidenav-container style="background-color:black;" class="sidenav-container">
-  
-  <mat-sidenav-content>
-    <mat-toolbar style="background-color:black">
-  
-      <span class="spacer"> </span>
-      <a  id="demo" mat-list-item href="/home"><b>Home</b></a>
-      <a  id="demo" mat-list-item href="/course-list"><b>Courses</b></a>
-      <a  id="demo" mat-list-item href="/about"><b>About</b></a>
-      <a  id="demo" mat-list-item href="/form"><b>Add Videos</b></a>
-
-    </mat-toolbar>
-    <!-- Add Content Here -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
-<!-- </div> -->
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="">Stube</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/course-list">Courses</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/add">Add Videos</a>
+          <a class="dropdown-item" href="/update">Update Videos</a>
+          <a class="dropdown-item" href="/delete">Delete Videos</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

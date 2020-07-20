@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <title>Stube | Updated Videos</title>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <h2><b><i>{{ title1|titlecase }}</i></b></h2>
+    <br>
+    <form #updatetutform="ngForm" (ngSubmit)="onSubmittut(updatetutform)">
+      <div *ngIf="show" class="alert alert-success alert-dismissible">
+        <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong> The Information is sent now write your updated data below
+      </div>
+      <div *ngIf="error" class="alert alert-danger">
+        <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Oops!</strong> Either You Entered a Wrong Tutorial Number or Selected a Wrong Course
+      </div>
+      <label for="updatetutvideo">Tutorial Number</label>
+      <input required minlength="1" maxlength="3" type="text" class="form-control" #number="ngModel" name="number"
+        ngModel aria-describedby="deletevideo" placeholder="Enter Tutorial Number">
+      <span *ngIf="number.invalid && number.touched" style="color:red;"><b>**Please Fill Correct Tutorial
+          Number</b></span>
+      <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Courses</label>
+        </div>
+        <select name="course" ngModel class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
+        </select>
+      </div>
+      <button type="submit" [disabled]="updatetutform.invalid" class="btn btn-primary">Send</button>
+    </form>
+
+    <br>
+
+    <h2><b><i>{{ title2|titlecase }}</i></b></h2>
+    <br>
+    <form #updateform="ngForm" (ngSubmit)="onSubmit(updateform)">
+      <div *ngIf="showupdate" class="alert alert-success alert-dismissible">
+        <a (click)="closealert()" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong> The Video is Succesfully uploaded
+      </div>
+      <label for="videoembed">Video Code</label>
+      <input required minlength="11" maxlength="11" type="text" class="form-control" #code="ngModel" name="code" ngModel
+        aria-describedby="videoembed" placeholder="Enter code">
+      <span *ngIf="code.invalid && code.touched" style="color:red;"><b>**Please Fill Correct Code</b></span>
+      <br>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Courses</label>
+        </div>
+        <select name="course" ngModel class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
+        </select>
+      </div>
+      <button type="submit" [disabled]="updateform.invalid" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

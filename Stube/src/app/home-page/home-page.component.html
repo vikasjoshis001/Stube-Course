@@ -9,14 +9,13 @@
 
 <div class="container">
 
-  <carousel >
+  <carousel>
     <slide>
       <img id="carousel" class="d-block w-100" src="assets/images/Angularjs.jpeg" alt="first slide"
         style="display: block;">
     </slide>
     <slide>
-      <img id="carousel" class="d-block w-100" src="assets/images/C pro.png" alt="second slide"
-        style="display: block;">
+      <img id="carousel" class="d-block w-100" src="assets/images/C pro.png" alt="second slide" style="display: block;">
     </slide>
     <slide>
       <img id="carousel" class="d-block w-100" src="assets/images/django python.jpg" alt="third slide"
@@ -45,8 +44,8 @@
   <div class='row'>
     <div id="rec_course" *ngFor='let video of recommended_course'>
       <div class="col-sm-12">
-        <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}"
-          routerLinkActive="active" width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
+        <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}" routerLinkActive="active"
+          width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
         <div class="card-body">
           <h5 class="card-title">{{ video.course }}</h5>
           <p style="color:grey;" class="card-text">{{ video.speaker }} <br></p>
@@ -67,10 +66,10 @@
   <h3>Mostly Students View</h3>
   <hr>
   <div class='row'>
-    <div  id="rec_course" *ngFor='let video of student_course'>
+    <div id="rec_course" *ngFor='let video of student_course'>
       <div class="col-sm-12">
-        <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}"
-          routerLinkActive="active" width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
+        <img style="border:solid;padding:20px;" routerLink="/course-list/{{ video.link }}" routerLinkActive="active"
+          width=10px height=150px [src]="video.image" class="w-100" [alt]="video.course">
         <div class="card-body">
           <h5 class="card-title">{{ video.course }}</h5>
           <p style="color:grey;" class="card-text">{{ video.speaker }} <br></p>

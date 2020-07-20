@@ -12,14 +12,11 @@ import videos from 'src/assets/json/courses.json';
 export class CourseListComponent implements OnInit, OnDestroy {
 
 
-
-
-
-
   private req: any;
   text: string;
   title = "Course List"
   public course_list: {
+    title: 'string',
     course: 'string',
     language: 'string',
     speaker: 'string',

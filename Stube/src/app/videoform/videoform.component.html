@@ -7,7 +7,7 @@
 <body>
   <div class="container">
     <br>
-    <br>
+    <h2><b><i>{{ title|titlecase }}</i></b></h2>
     <br>
     <form #videoform="ngForm" (ngSubmit)="onSubmit(videoform)">
       <div *ngIf="show" class="alert alert-success alert-dismissible">
@@ -23,12 +23,12 @@
         <div class="input-group-prepend">
           <label class="input-group-text" for="inputGroupSelect01">Courses</label>
         </div>
-        <select name="course" ngModel class="custom-select" id="inputGroupSelect01">
+        <select required name="course" ngModel class="custom-select" id="inputGroupSelect01">
           <option selected>Choose...</option>
           <option *ngFor="let courses of course_list" value="{{ courses.title }}">{{ courses.link }}</option>
         </select>
       </div>
-      <button type="submit" [disabled]="videoform.invalid" class="btn btn-primary">Submit</button>
+      <button type="submit" [disabled]="videoform.invalid" class="btn btn-primary">Add</button>
     </form>
   </div>
 </body>

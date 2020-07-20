@@ -22,6 +22,7 @@ import { MatListModule } from '@angular/material/list';
 import { AboutComponent } from './about/about.component';
 import { VideoformComponent } from './videoform/videoform.component';
 import { DeleteformComponent } from './deleteform/deleteform.component';
+import { UpdateformComponent } from './updateform/updateform.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DeleteformComponent } from './deleteform/deleteform.component';
     AboutComponent,
     VideoformComponent,
     DeleteformComponent,
+    UpdateformComponent,
   ],
   imports: [
     BrowserModule,

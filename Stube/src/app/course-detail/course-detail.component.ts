@@ -17,23 +17,22 @@ import videos from 'src/assets/json/courses.json';
 
 export class CourseDetailComponent implements OnInit, OnDestroy {
 
-
-
   private routeSub: any;
   link = "string";
   Data;
 
-  // C = ["Bjzfag1zZPg", "__JKmT5EFb8", "4RvPihzs6uw", "HXkuoR63_Ts", "dw889ubtFR8", "FZE_uBFkbqU", "iKyYV-BbPCg", "gIxYS1n00g0"];
-
-  // Angular = ["9wc8Gv8X49U", "8QOzAmWyouA", "XGEsZmoZNbw","XGEsZmoZNbw","E1lSYoLf5P4", "uBeDt_poi00", "1GnMB9ge6tg", "N0ldJ9jITE8", "6wD4V0rvlDI", "nzyJ9imm29w",];
   C = []
-  Angular = []
+  Angular4 = []
   Django2 = []
   Django22 = []
   Typescript = []
   Web = []
   ML = []
   Java = []
+  Angular9 = []
+  ReactJS = []
+  Python = []
+  NodeJS = []
 
   public course_list: {
     course: 'string',
@@ -50,37 +49,41 @@ export class CourseDetailComponent implements OnInit, OnDestroy {
     api.getapi().subscribe(data => {
       this.Data = data
       for (var val of this.Data) {
-        if (val['course'] == 'Angular') {
-          this.Angular.push(val['code'])
-          console.log(this.Angular)
+        if (val['course'] == 'Angular4') {
+          this.Angular4.push(val['code'])
         }
         else if (val['course'] == 'C') {
           this.C.push(val['code'])
-          console.log(this.C)
         }
         else if (val['course'] == 'Django2') {
           this.Django2.push(val['code'])
-          console.log(this.Django2)
         }
         else if (val['course'] == 'Django22') {
           this.Django22.push(val['code'])
-          console.log(this.Django22)
         }
         else if (val['course'] == 'Typescript') {
           this.Typescript.push(val['code'])
-          console.log(this.Typescript)
         }
         if (val['course'] == 'Web') {
           this.Web.push(val['code'])
-          console.log(this.Web)
         }
         else if (val['course'] == 'ML') {
           this.ML.push(val['code'])
-          console.log(this.ML)
         }
         else if (val['course'] == 'Java') {
           this.Java.push(val['code'])
-          console.log(this.Java)
+        }
+        else if (val['course'] == 'Angular9') {
+          this.Angular9.push(val['code'])
+        }
+        else if (val['course'] == 'ReactJS') {
+          this.ReactJS.push(val['code'])
+        }
+        else if (val['course'] == 'Python') {
+          this.Python.push(val['code'])
+        }
+        else if (val['course'] == 'NodeJS') {
+          this.NodeJS.push(val['code'])
         }
       }
     })
