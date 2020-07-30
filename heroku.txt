@@ -1,0 +1,37 @@
+step 1:Make Procfile
+            
+                     web: gunicorn app-name.wsgi --log-file -
+
+step 2:Make Requirements file
+
+                     pip freeze > requirements.txt
+
+        from requirements.txt remove pkg=0.0.0
+
+step 3:Make runtime.txt
+              
+                     python-3.6.9
+
+step 4:In settings.py allowed Host
+
+              url of your site
+
+step 5:Send it to git
+
+               git add
+               git commit       
+               git push
+
+step 6:heroku login
+
+step 7:heroku create your-site
+
+step 8:heroku git:remote -a your-site
+
+step 9:heroku config:set DISABLE_COLLECTSTATIC=1
+
+step 10:git push heroku master
+
+FINISH
+
+

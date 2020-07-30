@@ -35,6 +35,7 @@ export class VideoformComponent implements OnInit {
   onSubmit(data) {
     this.code = data.value['code']
     this.courses = data.value['course']
+    console.warn(data.value)
     this.api.postapi(data.value).subscribe()
     this.show = true
     data.reset()

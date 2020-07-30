@@ -1,0 +1,29 @@
+Angular = ["9wc8Gv8X49U", "8QOzAmWyouA", "XGEsZmoZNbw","XGEsZmoZNbw","E1lSYoLf5P4", "uBeDt_poi00", "1GnMB9ge6tg", "N0ldJ9jITE8", "6wD4V0rvlDI", "nzyJ9imm29w",];
+
+C = ["Bjzfag1zZPg", "__JKmT5EFb8", "4RvPihzs6uw", "HXkuoR63_Ts", "dw889ubtFR8", "FZE_uBFkbqU", "iKyYV-BbPCg", "gIxYS1n00g0"];
+
+NodeJS= ['zb3Qk8SG5Ms','OIBIXYLJjsI','-HPZ1leCV8k','DQD00NAUPNk','bdHE2wHT-gQ','Lr9WUkeYSA8','yXEesONd_54','_GJKAs7A0_4','bxsemcrY4gQ','VVGgacjzc2Y','nYAyhRAV87A']
+
+Django2 = [
+https://youtu.be/uu98pqiUJU8
+https://youtu.be/X1cx56CdkD4
+https://youtu.be/nxOPY1eFL9A
+https://youtu.be/V-GNjychlK0
+https://youtu.be/iYezqIBtaKM]
+
+
+Django22 = [
+https://youtu.be/-oQvMHpKkms]
+
+Typescript[
+https://youtu.be/yRQlo6ApYLw
+https://youtu.be/41nVtaAVdh4
+https://youtu.be/0ZNcPLcJmQU
+https://youtu.be/PO5SPiGoKxU
+https://youtu.be/5Fl3kC20Rpg
+]
+
+
+
+
+

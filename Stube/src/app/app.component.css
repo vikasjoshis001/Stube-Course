@@ -9,3 +9,10 @@ footer
     color: black;
     text-align: center;
 }
+
+a,u
+{
+    color: black;
+    text-decoration: none;
+
+}
